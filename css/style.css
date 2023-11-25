@@ -1,8 +1,148 @@
-
-body{
-    background-color: #AAA;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    text-align: center;
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #EEE;
+}
+
+
+/* HEADER */
+
+
+.logo-icon{
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+.logo-icon:hover{
+    opacity: 70%;
+    transition: 1s;
+}
+
+header .nav-link{
+    color: #555;
+    transition: 1s;
+    padding: 10px 15px !important;
+}
+header .nav-link:hover{
+    color:#000;
+    background-color: #DDD;
+    transition: 1s;
+}
+header .active{
+    color:#000 !important;
+    background-color: #BBB !important;
+    transition: 1s;
+}
+header .active:hover{
+    background-color: #DDD !important;
+    transition: 1s;
+}
+
+header button.navbar-toggler{
+    color:#777;
+    transition: 1s;
+}
+header button.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+header button.navbar-toggler:hover{
+    background-color: #DDD;
+    transition: 1s;
+}
+
+
+@media (max-width: 767px){
+
+    header ul.navbar-nav{
+        margin-top: 15px;
+    }
+
+
+}
+
+header ul.navbar-nav a{
+    padding-left: 15px;
+}
+header .navbar-collapse{
+    flex-grow: unset;
+}
+/* Sección Introducción */
+
+
+
+
+/* Sección Presentación y Trabajos */
+
+
+
+
+
+/* FOOTER */
+.background{
+   background-color: #555;
+   color: #EEE;
+}
+
+.footer .nav-link{
+    display: inline;
+}
+.footer .text-body-secondary{
+    color:#EEE !important;
+    transition: 1s;
+}
+.footer .text-body-secondary:hover{
+    opacity: 50%;
+    transition: 1s;
+}
+
+.footer .text-center{
+    text-align: center !important;
+}
+
+.social-icon{
+    width: 24px;
+    height: 24px;
+    transition: 1s;
+}
+
+.social-icon:hover{
+    opacity: 50%;
+    transition: 1s;
+}
+
+
+
+/* Elemento A */
+section.elementoA{
+    background-color: rgb(216, 198, 38, 0.6);
+    border-radius: 8px;
+    padding: 5px;
+}
+/* Elemento B */
+section.elementoB{
+    background-color: rgb(70, 187, 70, 0.6);
+    border-radius: 8px;
+    padding: 5px;
+}
+/* Elemento C */
+section.elementoC{
+    background-color: rgb(216, 83, 74, 0.6);
+    border-radius: 8px;
+    padding: 5px;
+}
+/* Elemento D */
+section.elementoD{
+    background-color: rgb(69, 134, 231, 0.6);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+table, th,td{
+    border:1px solid black;
 }
