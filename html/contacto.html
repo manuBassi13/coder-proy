@@ -15,7 +15,7 @@
 <body>
     
     <!-- Cabecera (igual en todas las páginas)  -->
-    <div class="container">
+    <div class="container-md">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom navbar navbar-expand-md">
             <div class="container-fluid">
                     
@@ -52,52 +52,61 @@
 
     <main>
         <!-- Sección Contacto -->
-        <section>
-            <h1>CONTACTO</h1>
-            
-            <div style="text-align: center;">
-                <form action="" method="">
-                    <ul>
-                        <li>
-                            <label for="name"></label>
-                            <input type="text" placeholder="Nombre">
-                        </li>
-                        <li>
-                            <label for="mail"></label>
-                            <input type="text" placeholder="Correo">
-                        </li>
-                        <li>
-                            <label for="msg"></label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        </li>
-                        <li>
-                            <button type="submit">Enviar</button>
-                        </li>
-                    </ul>
-                </form>    
-            
-            </div>
-            
-        </section>
+        <div class="container">
+            <section class="mb-5">
+                <h1 class="text-center">CONTACTO</h1>
+                
+                <form class="contacto" action="" method="">
 
-        <hr>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <abbr class="campo-requerido" title="Campo requerido">*</abbr>
+                        <input type="text" class="form-control" id="input-name" maxlength="50" required>
+                        
+                    </div>
+
+                    <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <abbr class="campo-requerido" title="Campo requerido">*</abbr>
+                    <input type="email" class="form-control" id="input-mail" maxlength="254" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                    <label for="msg" class="form-label">Mensaje</label>
+                    <abbr class="campo-requerido" title="Campo requerido">*</abbr>
+                    <textarea type="textarea" class="form-control" rows="6" maxlength="1000" required></textarea>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="reCaptcha" required>
+                    <label class="form-check-label" for="captcha">No soy un robot</label>
+                    <abbr class="campo-requerido" title="Campo requerido">*</abbr>
+                    </div>
+
+                    <p><span class="campo-requerido">*</span> Campo requerido</p>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>     
+            </section>
+        </div>
 
         <!-- Sección Ubicación -->
-        <section>
-            <h2>UBICACIÓN</h2>
+        <div class="container">
+            <section class="mb-5 text-center">
+                <h2>UBICACIÓN</h2>
 
-            <div>
-                <img src="" alt="Maps">
-            </div>
-            
-        </section>
-
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1408.4141056535252!2d-60.80659439644347!3d-32.90366326710364!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1700882964861!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </section>
+        </div>
     </main>
 
 
     <!-- Pie de página (igual en todas las páginas) -->
     <div class="background">
-        <div class="container footer">
+        <div class="container-md footer">
             <footer class="py-5">
                 <div class="row align-items-center">
                     <div class="col-6">
