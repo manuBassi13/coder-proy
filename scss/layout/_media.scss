@@ -1,0 +1,90 @@
+@media (max-width:991px){
+    form{
+        &.contacto{
+        margin: 0px 80px;
+        }
+    }
+}
+@media (max-width: 767px){
+    header{
+        ul{
+            .navbar-nav{
+                margin-top: 15px;
+            }
+        }
+    }
+    .introduccion{
+        padding: 15px;
+    }
+    form{
+        &.contacto{
+            margin: 0px 20px !important;
+        }
+    }
+    .mapa{
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 400px;
+        height: 0;
+        iframe{
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    }
+}
+@media (max-width: 575px){
+    footer{
+        .row{
+            display: block !important;
+            div{
+                width: 100%;
+                ul{
+                    align-items: center !important;
+                    &.links{
+                        display: flex !important;
+                        flex-direction: row !important;
+                        margin-bottom: 30px;
+                        justify-content: center !important;
+                        li{
+                            margin: 10px 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .social{
+            align-items: center !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+    }
+
+    section{
+        &.tratamientos{
+            .row{
+                display: block !important;
+                text-align: center !important;
+                .col{
+                    margin: 25px 0px;
+                    img{
+                        width: 80%;
+                        align-items: center !important;
+                    }
+                }
+            }
+        }
+    }
+    .dietoterapia{
+        .row{
+            display: block !important;
+            text-align: center !important;
+            div{
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

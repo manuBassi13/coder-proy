@@ -1,0 +1,27 @@
+form{
+    input, textarea{
+        border: 1px solid #DDD !important;
+        &:focus{
+            border: 1px solid #EEE !important;
+            box-shadow: 0 0 8px #555 !important;
+        }
+    }
+    &.contacto{
+        margin: 0px 200px;
+    }
+    .campo-requerido{
+        text-decoration: none;
+        color: #da1414;
+    }
+    button{
+        background-color: #BBB !important;
+        color: #333 !important;
+        border-color: #777 !important;
+        transition: 1s !important;
+        &:hover{
+            color: #EEE !important;
+            background-color: #777 !important;
+            transition: 1s;
+        }
+    }
+}

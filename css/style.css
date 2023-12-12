@@ -1,236 +1,239 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Roboto', sans-serif !important;
-    background-color: #EEE;
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #EEE;
 }
 
-
-/* HEADER */
-
-
-.logo-icon{
-    width: 50px;
-    height: 50px;
-    transition: 1s;
+@media (max-width: 991px) {
+  form.contacto {
+    margin: 0px 80px;
+  }
 }
-
-.logo-icon:hover{
-    opacity: 70%;
-    transition: 1s;
-}
-
-header .nav-link{
-    color: #555 !important;
-    transition: 1s;
-    padding: 10px 15px !important;
-}
-header .nav-link:hover{
-    color:#000 !important;
-    background-color: #DDD !important;
-    transition: 1s;
-}
-header .active{
-    color:#000 !important;
-    background-color: #BBB !important;
-    transition: 1s;
-}
-header .active:hover{
-    background-color: #DDD !important;
-    transition: 1s;
-}
-
-header button.navbar-toggler{
-    color:#777;
-    transition: 1s;
-}
-header button.navbar-toggler:focus{
-    box-shadow: none;
-}
-
-header button.navbar-toggler:hover{
-    background-color: #DDD;
-    transition: 1s;
-}
-
-
-@media (max-width: 767px){
-
-
-
-    header ul.navbar-nav{
-        margin-top: 15px;
-    }
-
-    .introduccion{
-        padding: 15px;
-    }
-
-    form.contacto{
-        margin: 0px 20px !important;
-    }
-
-    .mapa{
-        overflow: hidden;
-        position: relative;
-        padding-bottom: 400px;
-        height: 0;
-    }
-    .mapa iframe{
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-}
-
-header ul.navbar-nav a{
-    padding-left: 15px;
-}
-header .navbar-collapse{
-    flex-grow: unset;
-}
-
-/* Sección Introducción */
-
-.introduccion{
-    background-color: rgb(201, 145, 227, .5);
-    border-radius: 10px;
-    
-}
-
-
-
-/* Sección Presentación y Trabajos */
-
-.imagen-presentacion{
+@media (max-width: 767px) {
+  header ul .navbar-nav {
+    margin-top: 15px;
+  }
+  .introduccion {
+    padding: 15px;
+  }
+  form.contacto {
+    margin: 0px 20px !important;
+  }
+  .mapa {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 400px;
+    height: 0;
+  }
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
     width: 100%;
-    border-radius: 10px;
+    position: absolute;
+  }
 }
-
-.imagen-trabajo{
+@media (max-width: 575px) {
+  footer .row {
+    display: block !important;
+  }
+  footer .row div {
     width: 100%;
-    border-radius: 10px;
-}
-
-
-/* FOOTER */
-.background{
-   background-color: #555;
-   color: #EEE;
-}
-
-.footer .nav-link{
-    display: inline;
-}
-.footer .text-body-secondary{
-    color:#EEE !important;
-    transition: 1s;
-}
-.footer .text-body-secondary:hover{
-    opacity: 50%;
-    transition: 1s;
-}
-
-.footer .text-center{
+  }
+  footer .row div ul {
+    align-items: center !important;
+  }
+  footer .row div ul.links {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 30px;
+    justify-content: center !important;
+  }
+  footer .row div ul.links li {
+    margin: 10px 20px;
+  }
+  footer .social {
+    align-items: center !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  section.tratamientos .row {
+    display: block !important;
     text-align: center !important;
+  }
+  section.tratamientos .row .col {
+    margin: 25px 0px;
+  }
+  section.tratamientos .row .col img {
+    width: 80%;
+    align-items: center !important;
+  }
+  .dietoterapia .row {
+    display: block !important;
+    text-align: center !important;
+  }
+  .dietoterapia .row div {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+header .logo-icon {
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+header .logo-icon:hover {
+  opacity: 70%;
+  transition: 1s;
+}
+header nav-link {
+  color: #555 !important;
+  transition: 1s;
+  padding: 10px 15px !important;
+}
+header nav-link:hover {
+  color: #000 !important;
+  background-color: #DDD !important;
+  transition: 1s;
+}
+header .active {
+  color: #000 !important;
+  background-color: #BBB !important;
+  transition: 1s;
+}
+header .active:hover {
+  background-color: #DDD !important;
+  transition: 1s;
+}
+header button .navbar-toggler {
+  color: #777;
+  transition: 1s;
+}
+header button .navbar-toggler:focus {
+  box-shadow: none;
+}
+header button .navbar-toggler:hover {
+  background-color: #DDD;
+  transition: 1s;
+}
+header ul .navbar-nav a {
+  padding-left: 15px;
+}
+header .navbar-collapse {
+  flex-grow: unset;
 }
 
-.social-icon{
-    width: 24px;
-    height: 24px;
-    transition: 1s;
+.background {
+  background-color: #555;
+  color: #EEE;
 }
 
-.social-icon:hover{
-    opacity: 50%;
-    transition: 1s;
+.footer .nav-link {
+  display: inline;
+}
+.footer .text-body-secondary {
+  color: #EEE !important;
+  transition: 1s;
+}
+.footer .text-body-secondary:hover {
+  opacity: 50%;
+  transition: 1s;
+}
+.footer .text-center {
+  text-align: center !important;
 }
 
-
-
-/* Elemento A */
-section.elementoA{
-    background-color: rgb(216, 198, 38, 0.6);
-    border-radius: 8px;
-    padding: 5px;
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: 1s;
 }
-/* Elemento B */
-section.elementoB{
-    background-color: rgb(70, 187, 70, 0.6);
-    border-radius: 8px;
-    padding: 5px;
-}
-/* Elemento C */
-section.elementoC{
-    background-color: rgb(216, 83, 74, 0.6);
-    border-radius: 8px;
-    padding: 5px;
-}
-/* Elemento D */
-section.elementoD{
-    background-color: rgb(69, 134, 231, 0.6);
-    border-radius: 8px;
-    padding: 5px;
+.social-icon:hover {
+  opacity: 50%;
+  transition: 1s;
 }
 
-table, th,td{
-    border:1px solid black;
+/* Introducción */
+.introduccion {
+  background-color: rgba(201, 145, 227, 0.5);
+  border-radius: 10px;
 }
 
+/* Presentación y Trabajos */
+.imagen-presentacion {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imagen-trabajo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Elementos */
+section.elementoA {
+  background-color: rgba(216, 198, 38, 0.6);
+  border-radius: 8px;
+  padding: 5px;
+}
+section.elementoB {
+  background-color: rgba(70, 187, 70, 0.6);
+  border-radius: 8px;
+  padding: 5px;
+}
+section.elementoC {
+  background-color: rgba(216, 83, 74, 0.6);
+  border-radius: 8px;
+  padding: 5px;
+}
+section.elementoD {
+  background-color: rgba(69, 134, 231, 0.6);
+  border-radius: 8px;
+  padding: 5px;
+}
 
 /* DIETOTERAPIA */
-
-img.imagen-semillas{
-    width: 100%;
-    border-radius: 10px;
+table, th, td {
+  border: 1px solid black;
+}
+table.tabla-sabores, th.tabla-sabores, td.tabla-sabores {
+  width: 100%;
 }
 
-table.tabla-sabores{
-    width: 100%;
+img.imagen-semillas {
+  width: 100%;
+  border-radius: 10px;
 }
 
-
-/* CONTACTO */
-
-form.contacto{
-    margin: 0px 200px;
+form input, form textarea {
+  border: 1px solid #DDD !important;
+}
+form input:focus, form textarea:focus {
+  border: 1px solid #EEE !important;
+  box-shadow: 0 0 8px #555 !important;
+}
+form.contacto {
+  margin: 0px 200px;
+}
+form .campo-requerido {
+  text-decoration: none;
+  color: #da1414;
+}
+form button {
+  background-color: #BBB !important;
+  color: #333 !important;
+  border-color: #777 !important;
+  transition: 1s !important;
+}
+form button:hover {
+  color: #EEE !important;
+  background-color: #777 !important;
+  transition: 1s;
 }
 
-@media(max-width:991px){
-    form.contacto{
-        margin: 0px 80px;
-    }
-}
-
-form input, textarea{
-    border: 1px solid #DDD !important;
-}
-
-form input:focus, textarea:focus{
-    border: 1px solid #EEE !important;
-    box-shadow: 0 0 8px #555 !important;
-}
-
-
-form .campo-requerido{
-    text-decoration: none;
-    color: #da1414;
-}
-
-form button{
-    background-color: #BBB !important;
-    color: #333 !important;
-    border-color: #777 !important;
-    transition: 1s !important;
-}
-
-form button:hover{
-    color: #EEE !important;
-    background-color: #777 !important;
-    transition: 1s;
-}
+/*# sourceMappingURL=style.css.map */

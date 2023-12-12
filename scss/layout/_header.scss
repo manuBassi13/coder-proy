@@ -1,0 +1,55 @@
+
+
+header{
+    .logo-icon{
+        width: 50px;
+        height: 50px;
+        transition: 1s;
+        &:hover{
+            opacity: 70%;
+            transition: 1s;
+        }
+    }
+    nav-link{
+        color: #555 !important;
+        transition: 1s;
+        padding: 10px 15px !important;
+        &:hover{
+            color:#000 !important;
+            background-color: #DDD !important;
+            transition: 1s;
+        }
+    }
+    .active{
+        color:#000 !important;
+        background-color: #BBB !important;
+        transition: 1s;
+        &:hover{
+            background-color: #DDD !important;
+            transition: 1s;
+        }
+    }
+    button{
+        .navbar-toggler{
+            color:#777;
+            transition: 1s;
+            &:focus{
+                box-shadow: none;
+            }
+            &:hover{
+                background-color: #DDD;
+                transition: 1s;
+            }
+        }
+    }
+    ul{
+        .navbar-nav{
+            a{
+                padding-left: 15px;
+            }
+        }
+    }
+    .navbar-collapse{
+        flex-grow: unset;
+    }
+}
