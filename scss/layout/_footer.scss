@@ -1,0 +1,32 @@
+.background{
+    background-color: #555;
+    color: #EEE;
+ }
+
+ .footer{
+    .nav-link{
+        display: inline;
+    }
+    .text-body-secondary{
+        color:#EEE !important;
+        transition: 1s;
+        &:hover{
+            opacity: 50%;
+            transition: 1s;
+        }
+    }
+    .text-center{
+        text-align: center !important;
+    }
+
+ }
+
+ .social-icon{
+    width: 24px;
+    height: 24px;
+    transition: 1s;
+    &:hover{
+        opacity: 50%;
+        transition: 1s; 
+    }
+ }
