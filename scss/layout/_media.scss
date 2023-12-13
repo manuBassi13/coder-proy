@@ -1,7 +1,39 @@
+
 @media (max-width:991px){
     form{
         &.contacto{
         margin: 0px 80px;
+        }
+    }
+    .dietoterapia{
+        .row{
+            display: block !important;
+            text-align: center !important;
+            div{
+                width: 100%;
+                margin-bottom: 24px;
+            }
+            img{
+                width: 80% !important;
+            }
+        }
+    }
+    .imagen{
+        &.img-yin-yang{
+            width: 80% !important;
+        }
+    }
+    .yin-yang{
+        .row{
+            display: block !important;
+            text-align: center !important;
+            div{
+                width: 100%;
+                img{
+                    width: 50% !important;
+                    margin-bottom: 2em;
+                }
+            }
         }
     }
 }
@@ -15,6 +47,25 @@
     }
     .introduccion{
         padding: 15px;
+    }
+    .presentacion{
+        .row{
+            display: block !important;
+            text-align: center !important;
+            div{
+                width: 100%;
+                img{
+                    width: 60%;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+    }
+    .imagen{
+        &.img-qi{
+            width: 70% !important;
+        }
     }
     form{
         &.contacto{
@@ -77,14 +128,22 @@
             }
         }
     }
+    .presentacion{
+        img{
+            width: 80% !important;
+        }
+    }
+    .yin-yang{
+        img{
+            width: 80% !important;
+        }
+    }
     .dietoterapia{
         .row{
-            display: block !important;
-            text-align: center !important;
-            div{
-                width: 100%;
-                margin-bottom: 24px;
+            img{
+                width: 100% !important;
             }
         }
     }
+    
 }

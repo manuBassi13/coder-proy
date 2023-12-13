@@ -9,79 +9,6 @@ body {
   background-color: #EEE;
 }
 
-@media (max-width: 991px) {
-  form.contacto {
-    margin: 0px 80px;
-  }
-}
-@media (max-width: 767px) {
-  header ul .navbar-nav {
-    margin-top: 15px;
-  }
-  .introduccion {
-    padding: 15px;
-  }
-  form.contacto {
-    margin: 0px 20px !important;
-  }
-  .mapa {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 400px;
-    height: 0;
-  }
-  .mapa iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-}
-@media (max-width: 575px) {
-  footer .row {
-    display: block !important;
-  }
-  footer .row div {
-    width: 100%;
-  }
-  footer .row div ul {
-    align-items: center !important;
-  }
-  footer .row div ul.links {
-    display: flex !important;
-    flex-direction: row !important;
-    margin-bottom: 30px;
-    justify-content: center !important;
-  }
-  footer .row div ul.links li {
-    margin: 10px 20px;
-  }
-  footer .social {
-    align-items: center !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  section.tratamientos .row {
-    display: block !important;
-    text-align: center !important;
-  }
-  section.tratamientos .row .col {
-    margin: 25px 0px;
-  }
-  section.tratamientos .row .col img {
-    width: 80%;
-    align-items: center !important;
-  }
-  .dietoterapia .row {
-    display: block !important;
-    text-align: center !important;
-  }
-  .dietoterapia .row div {
-    width: 100%;
-    margin-bottom: 24px;
-  }
-}
 header .logo-icon {
   width: 50px;
   height: 50px;
@@ -91,12 +18,12 @@ header .logo-icon:hover {
   opacity: 70%;
   transition: 1s;
 }
-header nav-link {
+header .nav-link {
   color: #555 !important;
   transition: 1s;
   padding: 10px 15px !important;
 }
-header nav-link:hover {
+header .nav-link:hover {
   color: #000 !important;
   background-color: #DDD !important;
   transition: 1s;
@@ -165,49 +92,76 @@ header .navbar-collapse {
 }
 
 /* Presentación y Trabajos */
-.imagen-presentacion {
-  width: 100%;
+.imagen, .imagen.img-yin-yang {
+  width: 100% !important;
   border-radius: 10px;
 }
-
-.imagen-trabajo {
-  width: 100%;
-  border-radius: 10px;
+.imagen.img-yin-yang {
+  width: 40% !important;
+}
+.imagen.img-qi {
+  width: 80% !important;
 }
 
-/* Elementos */
+/* MTC */
+.ideograma {
+  margin-bottom: 2rem;
+}
+
+/* Bg Elementos */
 section.elementoA {
-  background-color: rgba(216, 198, 38, 0.6);
+  background-color: rgba(70, 187, 70, 0.4);
   border-radius: 8px;
   padding: 5px;
 }
 section.elementoB {
-  background-color: rgba(70, 187, 70, 0.6);
+  background-color: rgba(216, 83, 74, 0.4);
   border-radius: 8px;
   padding: 5px;
 }
 section.elementoC {
-  background-color: rgba(216, 83, 74, 0.6);
+  background-color: rgba(216, 198, 38, 0.4);
   border-radius: 8px;
   padding: 5px;
 }
 section.elementoD {
-  background-color: rgba(69, 134, 231, 0.6);
+  background-color: rgba(140, 158, 184, 0.4);
+  border-radius: 8px;
+  padding: 5px;
+}
+section.elementoE {
+  background-color: rgba(31, 90, 179, 0.4);
   border-radius: 8px;
   padding: 5px;
 }
 
 /* DIETOTERAPIA */
-table, th, td {
+table {
   border: 1px solid black;
 }
-table.tabla-sabores, th.tabla-sabores, td.tabla-sabores {
+table.tabla-sabores {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-img.imagen-semillas {
-  width: 100%;
-  border-radius: 10px;
+table.tabla-sabores td {
+  border: 1px solid black;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+table.tabla-sabores th {
+  border: 1px solid black;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+table.tabla-sabores .tg-0lax {
+  text-align: left;
+  vertical-align: top;
 }
 
 form input, form textarea {
@@ -234,6 +188,120 @@ form button:hover {
   color: #EEE !important;
   background-color: #777 !important;
   transition: 1s;
+}
+
+@media (max-width: 991px) {
+  form.contacto {
+    margin: 0px 80px;
+  }
+  .dietoterapia .row {
+    display: block !important;
+    text-align: center !important;
+  }
+  .dietoterapia .row div {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .dietoterapia .row img {
+    width: 80% !important;
+  }
+  .imagen.img-yin-yang {
+    width: 80% !important;
+  }
+  .yin-yang .row {
+    display: block !important;
+    text-align: center !important;
+  }
+  .yin-yang .row div {
+    width: 100%;
+  }
+  .yin-yang .row div img {
+    width: 50% !important;
+    margin-bottom: 2em;
+  }
+}
+@media (max-width: 767px) {
+  header ul .navbar-nav {
+    margin-top: 15px;
+  }
+  .introduccion {
+    padding: 15px;
+  }
+  .presentacion .row {
+    display: block !important;
+    text-align: center !important;
+  }
+  .presentacion .row div {
+    width: 100%;
+  }
+  .presentacion .row div img {
+    width: 60%;
+    margin-bottom: 2em;
+  }
+  .imagen.img-qi {
+    width: 70% !important;
+  }
+  form.contacto {
+    margin: 0px 20px !important;
+  }
+  .mapa {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 400px;
+    height: 0;
+  }
+  .mapa iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+@media (max-width: 575px) {
+  footer .row {
+    display: block !important;
+  }
+  footer .row div {
+    width: 100%;
+  }
+  footer .row div ul {
+    align-items: center !important;
+  }
+  footer .row div ul.links {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 30px;
+    justify-content: center !important;
+  }
+  footer .row div ul.links li {
+    margin: 10px 20px;
+  }
+  footer .social {
+    align-items: center !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  section.tratamientos .row {
+    display: block !important;
+    text-align: center !important;
+  }
+  section.tratamientos .row .col {
+    margin: 25px 0px;
+  }
+  section.tratamientos .row .col img {
+    width: 80%;
+    align-items: center !important;
+  }
+  .presentacion img {
+    width: 80% !important;
+  }
+  .yin-yang img {
+    width: 80% !important;
+  }
+  .dietoterapia .row img {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
