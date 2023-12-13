@@ -1,30 +1,43 @@
+$borderTable: 1px solid black;
+$borderRadius: 10px;
+
 
 /* Introducción */
 
 .introduccion{
     background-color: rgb(201, 145, 227, .5);
-    border-radius: 10px;
+    border-radius: $borderRadius;
 }
 
 /* Presentación y Trabajos */
 
-.imagen-presentacion{
-    width: 100%;
-    border-radius: 10px;
+.imagen{
+    width: 100% !important;
+    border-radius: $borderRadius;
+    &.img-yin-yang{
+        @extend .imagen;
+        width: 40% !important;
+    }
+    &.img-qi{
+        width: 80% !important;
+    }
 }
 
-.imagen-trabajo{
-    width: 100%;
-    border-radius: 10px;
+
+/* MTC */
+
+.ideograma{
+    margin-bottom: 2rem;
 }
 
-/* Elementos */
+/* Bg Elementos */
 section {
     $bgElementos: (
-        A: rgb(216, 198, 38, 0.6),
-        B: rgb(70, 187, 70, 0.6),
-        C: rgb(216, 83, 74, 0.6), 
-        D: rgb(69, 134, 231, 0.6)
+        A: rgb(70, 187, 70, 0.4),
+        B: rgb(216, 83, 74, 0.4),
+        C: rgb(216, 198, 38, 0.4), 
+        D: rgba(140, 158, 184, 0.4),
+        E: rgba(31, 90, 179, 0.4)
     );
 
     @each $elemento, $bgColors in $bgElementos{
@@ -37,16 +50,30 @@ section {
 }
 
 /* DIETOTERAPIA */
-table, th, td{
-    border:1px solid black;
+table{
+    border: $borderTable;
     &.tabla-sabores{
         width: 100%;
-    }
-}
-
-img{
-    &.imagen-semillas{
-        width: 100%;
-        border-radius: 10px;
+        border-collapse:collapse;
+        border-spacing:0;
+        td{
+            border: $borderTable;
+            font-size:14px;
+            overflow:hidden;
+            padding:10px 5px;
+            word-break:normal;
+        }
+        th{
+            border: $borderTable;
+            font-size:14px;
+            font-weight:bold;
+            overflow:hidden;
+            padding:10px 5px;
+            word-break:normal;
+        }
+        .tg-0lax{
+            text-align:left;
+            vertical-align:top
+        }
     }
 }
