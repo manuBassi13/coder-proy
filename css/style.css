@@ -111,6 +111,9 @@ header .navbar-collapse {
 .imagen.img-organos {
   width: 35% !important;
 }
+.imagen.img-350 {
+  width: 350px !important;
+}
 
 /* MTC */
 .ideograma {
@@ -300,6 +303,9 @@ form button:hover {
   .imagen.img-organos {
     width: 70% !important;
   }
+  .imagen.img-350 {
+    width: 100% !important;
+  }
   form.contacto {
     margin: 0px 20px !important;
   }
@@ -363,6 +369,15 @@ form button:hover {
   }
   .dietoterapia .row img {
     width: 100% !important;
+  }
+  section.elementos {
+    text-align: center !important;
+  }
+  section.elementos div.row {
+    display: block !important;
+  }
+  section.elementos div.row div {
+    width: 100%;
   }
 }
 
