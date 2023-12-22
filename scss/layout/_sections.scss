@@ -1,4 +1,4 @@
-$borderTable: 1px solid black;
+$borderTable: 1px solid #555;
 $borderRadius: 10px;
 
 
@@ -21,7 +21,17 @@ $borderRadius: 10px;
     &.img-qi{
         width: 80% !important;
     }
+    &.img-tcheng{
+        width: 40% !important;
+    }
+    &.img-ko{
+        width: 40% !important;
+    }
+    &.img-organos{
+        width: 35% !important;
+    }
 }
+
 
 
 /* MTC */
@@ -44,7 +54,7 @@ section {
         &.elemento#{$elemento}{
             background-color: $bgColors;
             border-radius: 8px;
-            padding: 5px;
+            padding: 15px;
         }
     }
 }
@@ -54,14 +64,22 @@ table{
     border: $borderTable;
     &.tabla-sabores{
         width: 100%;
+        border-style: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 0 1px #555;
         border-collapse:collapse;
         border-spacing:0;
         td{
             border: $borderTable;
             font-size:14px;
             overflow:hidden;
-            padding:10px 5px;
+            padding:10px 5px !important;
             word-break:normal;
+            ul{
+                margin: 5px 0;
+                display: inline-block;
+                width: 100%;
+            }
         }
         th{
             border: $borderTable;
@@ -74,6 +92,28 @@ table{
         .tg-0lax{
             text-align:left;
             vertical-align:top
+        }
+        a{
+            text-decoration: none;
+            float: right;
+            margin-right: 10px;
+            img{
+                width: 25px;
+                display: none;
+            }
+            &[aria-expanded="true"]{
+                .img-down{
+                    display: none;
+                }
+            }
+            &[aria-expanded="false"]{
+                .img-up{
+                    display: none;
+                }
+            }
+        }
+        .collapsing{
+            transition: 1s;
         }
     }
 }
