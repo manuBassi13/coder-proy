@@ -22,6 +22,15 @@
         &.img-yin-yang{
             width: 80% !important;
         }
+        &.img-tcheng{
+            width: 60% !important;
+        }
+        &.img-ko{
+            width: 60% !important;
+        }
+        &.img-organos{
+            width: 50% !important;
+        }
     }
     .yin-yang{
         .row{
@@ -37,6 +46,21 @@
         }
     }
 }
+@media (min-width: 768px){
+    table{
+        &.tabla-sabores{
+            ul{
+                div{
+                    &.collapse.dont-collapse-sm{
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px){
     header{
         ul{
@@ -66,6 +90,15 @@
         &.img-qi{
             width: 70% !important;
         }
+        &.img-tcheng{
+            width: 90% !important;
+        }
+        &.img-ko{
+            width: 90% !important;
+        }
+        &.img-organos{
+            width: 70% !important;
+        }
     }
     form{
         &.contacto{
@@ -83,6 +116,16 @@
             height: 100%;
             width: 100%;
             position: absolute;
+        }
+    }
+
+    table{
+        &.tabla-sabores{
+            a{
+                img{
+                    display: block;
+                }
+            }
         }
     }
 }

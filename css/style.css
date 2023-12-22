@@ -102,6 +102,15 @@ header .navbar-collapse {
 .imagen.img-qi {
   width: 80% !important;
 }
+.imagen.img-tcheng {
+  width: 40% !important;
+}
+.imagen.img-ko {
+  width: 40% !important;
+}
+.imagen.img-organos {
+  width: 35% !important;
+}
 
 /* MTC */
 .ideograma {
@@ -112,47 +121,55 @@ header .navbar-collapse {
 section.elementoA {
   background-color: rgba(70, 187, 70, 0.4);
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
 }
 section.elementoB {
   background-color: rgba(216, 83, 74, 0.4);
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
 }
 section.elementoC {
   background-color: rgba(216, 198, 38, 0.4);
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
 }
 section.elementoD {
   background-color: rgba(140, 158, 184, 0.4);
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
 }
 section.elementoE {
   background-color: rgba(31, 90, 179, 0.4);
   border-radius: 8px;
-  padding: 5px;
+  padding: 15px;
 }
 
 /* DIETOTERAPIA */
 table {
-  border: 1px solid black;
+  border: 1px solid #555;
 }
 table.tabla-sabores {
   width: 100%;
+  border-style: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #555;
   border-collapse: collapse;
   border-spacing: 0;
 }
 table.tabla-sabores td {
-  border: 1px solid black;
+  border: 1px solid #555;
   font-size: 14px;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 10px 5px !important;
   word-break: normal;
 }
+table.tabla-sabores td ul {
+  margin: 5px 0;
+  display: inline-block;
+  width: 100%;
+}
 table.tabla-sabores th {
-  border: 1px solid black;
+  border: 1px solid #555;
   font-size: 14px;
   font-weight: bold;
   overflow: hidden;
@@ -162,6 +179,24 @@ table.tabla-sabores th {
 table.tabla-sabores .tg-0lax {
   text-align: left;
   vertical-align: top;
+}
+table.tabla-sabores a {
+  text-decoration: none;
+  float: right;
+  margin-right: 10px;
+}
+table.tabla-sabores a img {
+  width: 25px;
+  display: none;
+}
+table.tabla-sabores a[aria-expanded=true] .img-down {
+  display: none;
+}
+table.tabla-sabores a[aria-expanded=false] .img-up {
+  display: none;
+}
+table.tabla-sabores .collapsing {
+  transition: 1s;
 }
 
 form input, form textarea {
@@ -208,6 +243,15 @@ form button:hover {
   .imagen.img-yin-yang {
     width: 80% !important;
   }
+  .imagen.img-tcheng {
+    width: 60% !important;
+  }
+  .imagen.img-ko {
+    width: 60% !important;
+  }
+  .imagen.img-organos {
+    width: 50% !important;
+  }
   .yin-yang .row {
     display: block !important;
     text-align: center !important;
@@ -218,6 +262,12 @@ form button:hover {
   .yin-yang .row div img {
     width: 50% !important;
     margin-bottom: 2em;
+  }
+}
+@media (min-width: 768px) {
+  table.tabla-sabores ul div.collapse.dont-collapse-sm {
+    display: block;
+    visibility: visible;
   }
 }
 @media (max-width: 767px) {
@@ -241,6 +291,15 @@ form button:hover {
   .imagen.img-qi {
     width: 70% !important;
   }
+  .imagen.img-tcheng {
+    width: 90% !important;
+  }
+  .imagen.img-ko {
+    width: 90% !important;
+  }
+  .imagen.img-organos {
+    width: 70% !important;
+  }
   form.contacto {
     margin: 0px 20px !important;
   }
@@ -256,6 +315,9 @@ form button:hover {
     height: 100%;
     width: 100%;
     position: absolute;
+  }
+  table.tabla-sabores a img {
+    display: block;
   }
 }
 @media (max-width: 575px) {
