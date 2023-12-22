@@ -99,6 +99,9 @@
         &.img-organos{
             width: 70% !important;
         }
+        &.img-350{
+            width: 100% !important;
+        }
     }
     form{
         &.contacto{
@@ -188,5 +191,18 @@
             }
         }
     }
-    
+    section{
+        &.elementos{
+            text-align: center !important;
+            div{
+                &.row{
+                    display: block !important;
+                    div{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
 }
