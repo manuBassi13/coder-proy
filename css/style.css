@@ -114,6 +114,9 @@ header .navbar-collapse {
 .imagen.img-350 {
   width: 350px !important;
 }
+.imagen.img-facu {
+  width: 70% !important;
+}
 
 /* MTC */
 .ideograma {
@@ -255,6 +258,9 @@ form button:hover {
   .imagen.img-organos {
     width: 50% !important;
   }
+  .imagen.img-facu {
+    width: 90% !important;
+  }
   .yin-yang .row {
     display: block !important;
     text-align: center !important;
@@ -306,6 +312,9 @@ form button:hover {
   .imagen.img-350 {
     width: 100% !important;
   }
+  .imagen.img-facu {
+    width: 35% !important;
+  }
   form.contacto {
     margin: 0px 20px !important;
   }
@@ -349,6 +358,15 @@ form button:hover {
     align-items: center !important;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+  }
+  .imagen.img-facu {
+    width: 50% !important;
+  }
+  .imagen.img-tratamiento {
+    width: 60% !important;
+  }
+  .imagen.img-350 {
+    width: 75% !important;
   }
   section.tratamientos .row {
     display: block !important;

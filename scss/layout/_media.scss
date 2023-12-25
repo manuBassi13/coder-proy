@@ -31,6 +31,9 @@
         &.img-organos{
             width: 50% !important;
         }
+        &.img-facu{
+            width: 90% !important;
+        }
     }
     .yin-yang{
         .row{
@@ -102,6 +105,9 @@
         &.img-350{
             width: 100% !important;
         }
+        &.img-facu{
+            width: 35% !important;
+        }
     }
     form{
         &.contacto{
@@ -156,6 +162,17 @@
             align-items: center !important;
             margin-bottom: 0 !important;
             padding-bottom: 0 !important;
+        }
+    }
+    .imagen{
+        &.img-facu{
+            width: 50% !important;
+        }
+        &.img-tratamiento{
+            width: 60% !important;
+        }
+        &.img-350{
+            width: 75% !important;
         }
     }
 
